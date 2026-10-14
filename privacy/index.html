@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>隱私權政策 — 量師傅</title>
 <meta name="description" content="量師傅 / 找量師傅 隱私權政策">
-  <link rel="stylesheet" crossorigin href="/lsf-site/assets/styles-BkU28hdF.css">
+  <link rel="stylesheet" crossorigin href="/lsf-site/assets/styles-lxl35ASF.css">
 </head>
 <body>
 <!-- 本檔由 scripts/build-legal.ts 從 legal/*.md 產生，請勿手改。 -->
@@ -17,7 +17,7 @@
 <p style="margin: 8px 0;">本政策適用於以下兩款應用程式(以下合稱「本服務」),由 Yu Chiao Huang(以下稱「我們」)開發與維運,兩者共用相同後端與帳號系統:</p>
 <ul style="margin: 8px 0; padding-left: 22px;">
 <li style="margin: 6px 0;"><strong>量師傅</strong>(iPad 版,Bundle ID <code>com.ciao.lsf</code>):供丈量/估價專業人士使用的付費訂閱工具,可註冊帳號。</li>
-<li style="margin: 6px 0;"><strong>找量師傅</strong>(iOS,<code>com.ciao.lsf.phone</code>):供一般民眾查詢測量服務人員的免費 App,僅能以既有帳號登入,不提供新註冊;其中「找測量人員」名單<strong>不需登入即可查詢</strong>。</li>
+<li style="margin: 6px 0;"><strong>找量師傅</strong>(iOS,<code>com.ciao.flsf</code>):供一般民眾查詢測量服務人員的免費 App,僅能以既有帳號登入,不提供新註冊;其中「找測量人員」名單<strong>不需登入即可查詢</strong>。</li>
 </ul>
 <p style="margin: 8px 0;">我們重視使用者隱私,本政策說明本服務如何蒐集、使用、存放、公開與保護您的個人資料。使用本服務即表示您已閱讀並同意本政策。</p>
 </div>
@@ -25,13 +25,15 @@
 <section style="background: #eef6ef; border: 1.5px solid #5c9a68; border-radius: 12px; padding: 20px 22px; margin-bottom: 24px;">
 <h2 style="font-size: 18px; margin: 0 0 12px; color: #2f5a37; font-weight: 600;">一、核心隱私承諾</h2>
 <p style="margin: 8px 0;"><strong>您在本服務中建立的丈量數據、工作表內容、公式、匯出的 PDF/Excel 文件等實際測量與文件資料,只會儲存在您的裝置上,我們不會將這些資料上傳、傳輸或備份到任何伺服器或雲端服務。</strong> 我們(或任何第三方)都無法讀取您的測量/文件內容。</p>
-<p style="margin: 8px 0;">以下情況為例外,且僅在您主動觸發時才會傳送:</p>
+<p style="margin: 8px 0;">以下情況為例外,且僅在您主動觸發時才會傳送,傳送前會先去識別化、移除個人資訊(同行範本另會移除實際測量數值):</p>
 <ul style="margin: 8px 0; padding-left: 22px;">
 <li style="margin: 6px 0;"><strong>同行範本分享</strong>:您主動選擇將工作表「範本」分享給其他使用者時,系統只保留白名單內的內容:上方資訊卡片只留「工程項目」;下方只留快捷鍵與小計／合計／總計、樓層／項目／戶別。其餘一律清除(含計算式、實際測量數值、備註,以及案場、客戶、聯絡資訊與您自行輸入的其他文字)。</li>
 <li style="margin: 6px 0;"><strong>AI 連接(選用)</strong>:您主動啟用並於每次確認後,您勾選的案場資料(案名、地點、案場類型／丈量項目／日期、項目與數量、計算式、小計、合計與總計、備註;案名與地點預設不勾)會由您的裝置直接傳送給您自選的第三方 AI 供應商,不經過我們的伺服器(詳見第三之二節)。</li>
+<li style="margin: 6px 0;"><strong>提供模型訓練檔案(選用)</strong>:首頁的「提供模型訓練檔案」資料夾只接收「複製」(不能移動、不能拖曳)。只有您親手按下複製、並在「確定提供?」對話框按下確定的那份檔案,才會上傳到我們的後台,用來訓練 AI 模型、精進測量功能。上傳前 App 會先去識別化:資訊欄只保留工程類型,客戶姓名、地址、電話、公司名一律清除。後台不儲存您的帳號識別(不記錄 user_id),只收去識別化後的檔案與工程類型,因此已提供的資料無法連結到您,也無法個別撤回;複製進該資料夾即上傳,事後刪除本機檔案或刪除該資料夾內的檔案,都不會撤回已上傳的內容。您未主動複製的其他量測資料,仍一律只留在您的裝置上。</li>
 <li style="margin: 6px 0;"><strong>一鍵備份／導入(選用)</strong>:您主動點選「備份」時,App 會把您裝置上的資料夾、檔案、備忘錄(含錄音)、範本、快捷字、警報門檻與各項設定打包成一個備份檔,<strong>只存到您自己選擇的地方</strong>(AirDrop、iCloud 雲碟等雲端、接線或 Wi-Fi 傳到電腦);這個過程不經過我們的伺服器,我們不會收到、保存這份備份檔,也無法替您找回遺失的備份。備份檔存放後的保管與外流風險由您自行負責;存到第三方雲端服務時,也適用該服務自己的條款與隱私權政策。「導入」會用您選擇的備份檔<strong>整個取代</strong>本機目前的資料與設定,執行前 App 會要求您確認三次,且會自動保留一份導入前的資料。
 <ul style="margin: 8px 0; padding-left: 22px;">
 <li style="margin: 6px 0;"><strong>自動備份到 iCloud(選用,預設關閉)</strong>:您於備份頁主動開啟「自動備份到 iCloud」開關後,App 每天第一次離開或關閉時會在背景自動產生一份備份,寫入<strong>您自己 Apple 帳號下的 iCloud 雲碟</strong>(App 的 iCloud 容器內,資料夾「量師傅備份」),保留最近 14 份、超過自動刪除最舊的一份;這整個過程是您的裝置與您的 iCloud 之間直接發生,<strong>不經過我們的伺服器,我們無法存取這些備份</strong>。</li>
+<li style="margin: 6px 0;"><strong>備份到 Google 雲端硬碟(選用)</strong>:您主動登入 Google 並選擇「備份到 Google 雲端硬碟」後,備份檔會存到<strong>您自己的 Google 雲端硬碟</strong>,保留最近 14 份、超過自動刪除最舊的一份。App 只申請 drive.file 權限(只能存取 App 自己建立的檔案,看不到您雲端硬碟裡的其他檔案),登入憑證只存在您裝置的鑰匙圈;備份檔不經過我們的伺服器,我們無法存取,也無法替您找回。</li>
 <li style="margin: 6px 0;"><strong>電腦備份提醒(選用)</strong>:您於備份頁主動選定一個電腦共享資料夾後,App 會在偵測到您的裝置與該電腦處於同一 Wi-Fi 且可連線時,於前景跳出提醒詢問是否要備份一份過去;這個偵測與備份動作同樣只發生在<strong>您的裝置與您自己選定的電腦之間</strong>,不經過我們的伺服器。</li>
 </ul>
 </li>
